@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html> <link rel="stylesheet" href="styles.css">
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <body>
+  <p id="description">Thank you for taking the time to help us improve the platform </p>
+  <form id="survey-form">
+  <label id="name-label"> Name  <input id="name" type="text" name="firstName" placeholder="Enter your name" required></input></label>
+   <label id="email-label"> Email <input id="email" type="email" placeholder="Enter your Email" required name="adress"></input></label>
+  <label id="number-label"> Age (optional)  <input id="number" name="age" placeholder="age" type="number" min="13" max="120"></input></label>
+  <label>Which option best describes your current role?
+  <select id="dropdown">
+  
+    <option>Employed</option>
+    <option>Unemplyed</option> </label>
+  </select>
+  <fieldset> Would you recommend freeCodeCamp to a friend?
+    <input type="radio" value= "yes"name="answer">Yes<br>
+    <input type="radio" value="no" name="answer">No<br>
+  <input type="radio" value="maybe" name="answer">Maybe<br>  
+    </fieldset>
+ <fieldset> 
+   What would you like to see improved? 
+   
+   <input type="checkbox" value="ans1">Front-end Projects</input>  
+   <input type="checkbox" value="ans2">Data Visualization</input> 
+   <input type="checkbox" value="ans3">Additional Courses</input>
+    
+    </fieldset>
+<label> Any comments or suggestions? 
+   <textarea name="comments" row="3" cols="30" placeholder="Enter your comment here...">
+   </textarea></label>
+   <button id="submit" name="submit">Submit</button>
+  </form>
+  </body>
+</html>
